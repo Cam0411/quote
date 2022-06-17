@@ -1,10 +1,10 @@
 const content = document.querySelector('.content__txt')
-const quoteApi = `http://api.quotable.io/random`
+const quoteApi = 'http://api.quotable.io/random'
 
 function getQuote(calback){
     
     fetch(quoteApi)
-    .then(res => {return res.json("")})
+    .then((res)=> {return res.json("")})
     .then(displayQuote)
 }
 
