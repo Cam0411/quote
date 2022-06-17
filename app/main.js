@@ -1,6 +1,6 @@
 const content = document.querySelector('.content__txt')
 const quoteApi = 'http://api.quotable.io/random'
-
+const random = document.querySelector('.random')
 function getQuote(calback){
     
     fetch(quoteApi)
@@ -16,4 +16,4 @@ function displayQuote(quote){
     `
    content.innerHTML = html
 }
-getQuote()
+random.addEventListener('click',getQuote)
